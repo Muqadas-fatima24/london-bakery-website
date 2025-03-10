@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>London Bakery.qa</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <header>
+      <!-- navbar -->
+      <nav>
+        <div class="header">
+          <!-- 1-logoimage -->
+          <div class="image-logo">
+            <a data-name="Navbar Logo" href="/" class="logo">
+              <img
+                src="/assets/images/logo.jpg"
+                class="img-fluid"
+                alt="London Bakery"
+              />
+            </a>
+          </div>
+
+          <!-- ul -->
+          <div class="ul">
+            <ul class="ist-ul">
+              <li class="home"><a href="index.html">Home</a></li>
+              <li class="appoint"><a href="/calender.html">Appointment</a></li>
+              <li class="contact"><a href="/contact.html">Contact Us</a></li>
+            </ul>
+            <!-- 2ul -->
+            <ul class="sec-ul">
+              <li class="search">
+                <a href="#">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+              </li>
+              <li class="tele">
+                <a href="tel://+97444479785" class="">
+                  <i class="fa fa-1x fa-fw fa-phone me-1"></i>
+                  <span class="o_force_ltr">
+                    <small>+974 4447 9785</small>
+                  </span>
+                </a>
+              </li>
+              <li class="signin-box main-part">
+                <a href="/login.html" class="btn-s">Sign in</a>
+                <a href="/contact.html" class="btn-c">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="search-bar" id="search-bar">
+        <input type="text" placeholder="Search..."/>
+        <a href="/search.html" style="cursor: pointer;">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+      </div>
+      <div class="overlay" id="overlay"></div>
+      <!-- drop -->
+    <div class="dropdown">
+      <div class="dropdown-menu">
+        <div class="file-radius">
+        <a href="/contact.html" class="file-part">
+          <div class="file">
+            <i class="fa-regular fa-file"></i>
+            <div class="file-para">
+              <h6>Contact Us</h6>
+              <p class="file-explain">Contact us about anything related to our company or services.
+                We'll do our best to get back to you as soon as possible. Your Name* Phone Number* Your Email* Your Company Subject* Your Questions Email...</p>
+            </div>
+          </div>
+        </a>   
+        <a href="/calender.html" class="file-part">
+          <div class="file">
+            <i class="fa-solid fa-calendar-days"></i>
+            <div class="file-para">
+              <h6>Industrial Visit</h6>
+              <p class="file-explain"> At London Bakery , Anything related to our company or services.
+                We'll do our best to get back to you as soon as possible to our company or services.</p>
+            </div>
+          </div>
+        </a>     
+        <a href="/recruitment.html" class="file-part">
+          <div class="file">
+            <i class="fa-regular fa-file"></i>
+            <div class="file-para">
+              <h6>Thank You(Recruitment)</h6>
+              <p class="file-explain">fully, We usually respond within 3 days... In the meantime, 
+                Take a look around our website: Home About Us Products 
+                Your contact inrelated to our company or services.
+                We'll do our best to get back to you as soon as possible.</p>
+            </div>
+          </div>
+        </a>   
+        <a href="/index.html" class="file-part">
+          <div class="file">
+            <i class="fa-regular fa-file"></i>
+            <div class="file-para">
+              <h6>Home</h6>
+              <p class="file-explain"><span>Fresh Bakery Contact Us Qatar Quality London Bakerywas established in Qatar to meet the demands o</span></p>
+            </div>
+          </div>
+        </a>
+        <a href="/thanku.html" class="file-part">
+          <div class="file">
+            <i class="fa-regular fa-file"></i>
+            <div class="file-para">
+              <h6>Thanks</h6>
+              <p class="file-explain">Anything related to our company or services.
+                We'll do our best to get back to you as soon as possible.</p>
+            </div>
+          </div>
+        </a>
+        <!-- <a href="/Details.html" class="file-part">
+          <div class="file">
+            <div class="file-para redcolor">
+              <button class="allresult">All results</button>
+            </div>
+          </div>
+        </a>  -->
+
+      </div>
+    </div>
+  </div>
+          
+      <!-- drop end -->
+    </header>
+    <!-- nav ends -->
+     <div class="complete">
+    <div class="whole">
+      <div class="pats">
+        <div class="appointt">
+          <a href="/calender.html"
+            ><i class="fa-solid fa-arrow-left-long"></i>All Appointment</a
+          >
+        </div>
+        <div class="dettails">
+          <ul>
+            <li>
+              <a href="">Date &amp;Time</a> <i class="fa-solid fa-angle-right"></i>
+            </li>
+            <li>
+              <a href="">Details</a><i class="fa-solid fa-angle-right"></i>
+            </li>
+            <li><a href="">Booked</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="success rescedule">
+          <strong>Appointment canceled!</strong>
+          You can schedule another appointment from here.
+      
+      </div>
+      <!-- calendar part -->
+      <h4 class="calendar-title">SELECT A DATE &amp; TIME</h4>
+      <div class="calendar-container">
+        <div class="calendar">
+          <div class="calendar-header">
+            <button id="prevMonth">&lt;</button>
+            <h2 id="currentMonthYear"></h2>
+            <button id="nextMonth">&gt;</button>
+          </div>
+          <div class="calendar-days">
+            <div class="day-names">
+              <div>Sun</div>
+              <div>Mon</div>
+              <div>Tue</div>
+              <div>Wed</div>
+              <div>Thu</div>
+              <div>Fri</div>
+              <div>Sat</div>
+            </div>
+            <div class="days" id="calendarDays"></div>
+          </div>
+        </div>
+        <div class="display">
+          <p>Select a time</p>
+          <div id="timezoneDisplay"></div>
+        </div>
+      </div>
+      <div class="time-select">
+        <p>TimeZone:</p>
+        <select id="countrySelect">
+          <option value="Asia/Qatar">Asia/Qatar</option>
+          <option value="Asia/Tokyo">Asia/Tokyo</option>
+          <option value="Asia/Seoul">Asia/Seoul</option>
+          <option value="Asia/Shanghai">Asia/Shanghai</option>
+          <option value="Asia/Kolkata">Asia/Kolkata</option>
+          <option value="Asia/Karachi">Asia/Karachi</option>
+          <option value="Asia/Jakarta">Asia/Jakarta</option>
+          <option value="Asia/Manila">Asia/Manila</option>
+          <option value="Asia/Singapore">Asia/Singapore</option>
+          <option value="Asia/Bangkok">Asia/Bangkok</option>
+          <option value="Asia/Dubai">Asia/Dubai</option>
+          <option value="Asia/Tehran">Asia/Tehran</option>
+          <option value="Asia/Kabul">Asia/Kabul</option>
+          <option value="Asia/Riyadh">Asia/Riyadh</option>
+          <option value="Asia/Jerusalem">Asia/Jerusalem</option>
+          <option value="Asia/Taipei">Asia/Taipei</option>
+          <option value="Asia/Ho_Chi_Minh">Asia/Ho_Chi_Minh</option>
+          <option value="Asia/Kathmandu">Asia/Kathmandu</option>
+          <option value="Asia/Colombo">Asia/Colombo</option>
+          <option value="Asia/Ulaanbaatar">Asia/Ulaanbaatar</option>
+        </select>
+      </div>
+      <div class="hrr"></div>
+      <div class="description">
+        <h5 class="head5">Description</h5>
+        <div class="desp">
+          <p>At London Bakery, we are excited to offer you the opportunity 
+            to explore the fascinating world of food manufacturing through
+             our Industrial Visit program. Our aim is to provide students,
+              professionals, and enthusiasts with an insightful and 
+              educational experience, showcasing the processes
+               involved in creating some of your favorite food 
+               products.&nbsp;<br><strong><br></strong>
+            Please select a date from the calendar below for your visit,
+             keeping in mind that visits are not possible on peak days, which include 
+             <strong>Wednesdays, Thursdays, and Fridays</strong><br>
+          </p>
+        </div>
+      </div>
+     
+    </div>
+     <!-- ========================to form the next part of whole -->
+      <div class="right">
+        <div class="things">
+          <div class="small-img">
+            <img src="/assets/images/corner.jpg" alt="picture">
+          </div>        
+          <h5 class="heading5">INDUSTRIAL VISIT</h5>
+        </div>  
+        <small class="text-upper">MEETING DETAILS</small> 
+        <div class="indarea">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>Zone No: 81, New Industrial<br> area</p>
+        </div> 
+        <div class="oneh">
+          <i class="fa-regular fa-clock"></i>
+          <p>1 hour</p>
+
+        </div>
+        
+      </div>
+    
+     <!-- ===============================end -->
+    </div>
+    <!-- end -->
+    <!-- footer -->
+    <section class="footer">
+      <div class="footer-parts">
+        <h4>ABOUT US</h4>
+        <div class="footer-container">
+          <!-- 1 -->
+          <div class="flex1">
+            <p>
+              Our commitment to high-quality products has allowed us to grow
+              into a truly world-class business. Our Brand, London bakery has a
+              place in the hearts and minds of ​Qatar’s multicultural community.
+              Perceived fondly by our customers, our bond with them is our
+              success and it is this unique relationship that has driven our
+              branding and it fuels our desire to continue to satisfy our
+              clientele by providing high-quality products in our ever-expanding
+              outlets.
+            </p>
+          </div>
+          <!-- 2 -->
+          <div class="flex2">
+            <p class="text-muted">
+              <b>London Bakery</b>
+              <br />Street No: 40, Zone No: 81<br />
+              Building No: 63<br />New Industrial area<br />Doha, 20730&nbsp;<br />Qatar
+            </p>
+          </div>
+          <!-- 3 -->
+          <div class="flex3">
+            <div class="col1">
+              <!-- ul -->
+              <ul class="list">
+                <li class="list1">
+                  <i class="fa fa-phone fa-fw me-2"></i>
+                  <span class="telephone">
+                    <a href="tel://+97444479785">+974 4447 9785</a>
+                  </span>
+                </li>
+                <li class="list2">
+                  <i class="fa fa-fw fa-volume-control-phone"></i>
+                  <span>Toll free: 800 6246</span>
+                  <br />
+                </li>
+                <li class="list3">
+                  <i class="fa fa-envelope fa-fw me-2"></i>
+
+                  <a href="mailto:info@londonbakery.qa​"
+                    >info@londonbakery.qa</a
+                  >
+                </li>
+              </ul>
+              <!-- ul end  -->
+              <div class="text-start">
+                <a
+                  href="https://www.facebook.com/londonbakery.qa/"
+                  style="text-decoration: none"
+                >
+                  <div class="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </div>
+                </a>
+
+                <a
+                  href="https://www.instagram.com/londonbakeryqatar/"
+                  style="text-decoration: none"
+                >
+                  <div class="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                </a>
+                <a
+                  href="https://wa.me/+97459988157?text=%20Contact%20Us%20%7C%20London%20Bakery%20https%3A%2F%2Fwww.londonbakery.qa%2Fcontactus%23scrollTop%3D0"
+                  style="text-decoration: none"
+                >
+                  <div class="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </div>
+                </a>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=info@londonbakery.qa"
+                  style="text-decoration: none"
+                >
+                  <div class="mail">
+                    <i class="fa fa-envelope shadow-sm rounded"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Copyright <span> &#169;</span> London Bakery</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

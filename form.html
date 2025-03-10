@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>London Bakery.qa</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <header>
+      <!-- navbar -->
+      <nav>
+        <div class="header">
+          <!-- 1-logoimage -->
+          <div class="image-logo">
+            <a data-name="Navbar Logo" href="/" class="logo">
+              <img
+                src="/assets/images/logo.jpg"
+                class="img-fluid"
+                alt="London Bakery"
+              />
+            </a>
+          </div>
+
+          <!-- ul -->
+          <div class="ul">
+            <ul class="ist-ul">
+              <li class="home"><a href="index.html">Home</a></li>
+              <li class="appoint"><a href="/calender.html">Appointment</a></li>
+              <li class="contact"><a href="/contact.html">Contact Us</a></li>
+            </ul>
+            <!-- 2ul -->
+            <ul class="sec-ul">
+              <li class="search">
+                <a href="#">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+              </li>
+              <li class="tele">
+                <a href="tel://+97444479785" class="">
+                  <i class="fa fa-1x fa-fw fa-phone me-1"></i>
+                  <span class="o_force_ltr">
+                    <small>+974 4447 9785</small>
+                  </span>
+                </a>
+              </li>
+              <li class="signin-box main-part">
+                <a href="/login.html" class="btn-s">Sign in</a>
+                <a href="/contact.html" class="btn-c">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="search-bar" id="search-bar">
+        <input type="text" placeholder="Search..."/>
+        <a href="/search.html" style="cursor: pointer;">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+      </div>
+      <div class="overlay" id="overlay"></div>
+      <!-- drop -->
+    <div class="dropdown">
+      <div class="dropdown-menu">
+        <div class="file-radius">
+        <a href="/contact.html" class="file-part">
+          <div class="file">
+            <i class="fa-regular fa-file"></i>
+            <div class="file-para">
+              <h6>Contact Us</h6>
+              <p class="file-explain">Contact us about anything related to our company or services.
+                We'll do our best to get back to you as soon as possible. Your Name* Phone Number* Your Email* Your Company Subject* Your Questions Email...</p>
+            </div>
+          </div>
+        </a>   
+        <a href="/calender.html" class="file-part">
+          <div class="file">
+            <i class="fa-solid fa-calendar-days"></i>
+            <div class="file-para">
+              <h6>Industrial Visit</h6>
+              <p class="file-explain"> At London Bakery , Anything related to our company or services.
+                We'll do our best to get back to you as soon as possible to our company or services.</p>
+            </div>
+          </div>
+        </a>     
+        <a href="/recruitment.html" class="file-part">
+          <div class="file">
+            <i class="fa-regular fa-file"></i>
+            <div class="file-para">
+              <h6>Thank You(Recruitment)</h6>
+              <p class="file-explain">fully, We usually respond within 3 days... In the meantime, 
+                Take a look around our website: Home About Us Products 
+                Your contact inrelated to our company or services.
+                We'll do our best to get back to you as soon as possible.</p>
+            </div>
+          </div>
+        </a>   
+        <a href="/index.html" class="file-part">
+          <div class="file">
+            <i class="fa-regular fa-file"></i>
+            <div class="file-para">
+              <h6>Home</h6>
+              <p class="file-explain"><span>Fresh Bakery Contact Us Qatar Quality London Bakerywas established in Qatar to meet the demands o</span></p>
+            </div>
+          </div>
+        </a>
+        <a href="/thanku.html" class="file-part">
+          <div class="file">
+            <i class="fa-regular fa-file"></i>
+            <div class="file-para">
+              <h6>Thanks</h6>
+              <p class="file-explain">Anything related to our company or services.
+                We'll do our best to get back to you as soon as possible.</p>
+            </div>
+          </div>
+        </a>
+        <!-- <a href="/Details.html" class="file-part">
+          <div class="file">
+            <div class="file-para redcolor">
+              <button class="allresult">All results</button>
+            </div>
+          </div>
+        </a>  -->
+
+      </div>
+    </div>
+  </div>
+          
+      <!-- drop end -->
+    </header>
+    <!-- nav ends -->
+    <div class="complex">
+      <div class="complete">
+        <!-- left part -->
+        <div class="whole">
+          <div class="pats">
+            <div class="appointt">
+              <a href="/calender.html"
+                ><i class="fa-solid fa-arrow-left-long"></i>All Appointment</a
+              >
+            </div>
+            <div class="dettails">
+              <ul>
+                <li>
+                  <a href="/calender.html" style="color: #e81d2e"
+                    >Date &amp;Time</a
+                  >
+                  <i class="fa-solid fa-angle-right"></i>
+                </li>
+                <li>
+                  <a href="" style="color: rgb(33, 37, 41); font-weight: 600"
+                    >Details</a
+                  ><i class="fa-solid fa-angle-right"></i>
+                </li>
+                <li><a href="">Booked</a></li>
+              </ul>
+            </div>
+          </div>
+          <h4 class="formh4">Add more details about you</h4>
+          <!-- form -->
+          <!-- <form action="#" class="form" onsubmit="return validateForm1()"> -->
+          <form
+            action="#"
+            class="form"
+            onsubmit="event.preventDefault(); return validateForm1();"
+          >
+            <!-- name -->
+            <div class="row mb1">
+              <label class="nameL labels" for="name">Full name*</label>
+              <div class="nameI afterL" id="local">
+                <input
+                  type="char"
+                  class="form-control"
+                  name="name"
+                  required
+                  placeholder="e.g. John Smith"
+                />
+              </div>
+            </div>
+            <!-- email -->
+            <div class="row mb2">
+              <label class="emailL labels" for="name">Email*</label>
+              <div class="emailI afterL" id="local">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="name"
+                  required
+                  placeholder="e.g. John Smith@example.com"
+                />
+              </div>
+            </div>
+            <!-- phonr number -->
+            <div class="row mb3">
+              <label class="phoneL labels" for="phone number"
+                >Phone Number*</label
+              >
+              <div class="phoneI afterL" id="local">
+                <input
+                  type="tel"
+                  class="form-control"
+                  name="name"
+                  required
+                  placeholder="e.g. +1(605 691-3277)"
+                />
+              </div>
+            </div>
+            <!-- natinality -->
+            <div class="row mb4">
+              <label class="nationL labels" for="nationality"
+                >Nationality*</label
+              >
+              <div class="nationI afterL" id="local">
+                <input type="char" class="form-control" required />
+              </div>
+            </div>
+            <!-- age -->
+            <div class="row mb5">
+              <label class="ageL labels" for="age">Age*</label>
+              <div class="ageI afterL" id="local">
+                <input type="char" class="form-control" required />
+              </div>
+            </div>
+            <!-- check boxes -->
+            <div class="row mb6">
+              <label class="genderL" for="gender">Gender *</label>
+              <div class="col-sm-9">
+                <div class="checkbox form-control">
+                  <label>
+                    <input
+                      type="radio"
+                      class="form-check"
+                      name="question_3"
+                      required
+                      value="1"
+                      required
+                    />
+                    Male
+                  </label>
+                </div>
+                <div class="checkbox form-control">
+                  <label>
+                    <input
+                      type="radio"
+                      class="form-check"
+                      name="question_3"
+                      required
+                      value="3"
+                    />
+                    Other
+                  </label>
+                </div>
+                <div class="checkbox form-control">
+                  <label>
+                    <input
+                      type="radio"
+                      class="form-check"
+                      name="question_3"
+                      required
+                      value="4"
+                    />
+                    Female
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- qid num -->
+            <div class="row mb7">
+              <label class="idL labels" for="age">QID number*</label>
+              <div class="idI afterL" id="local">
+                <input
+                  type="char"
+                  class="form-control"
+                  required
+                  placeholder="Qatar ID"
+                />
+              </div>
+            </div>
+            <!-- purpose of visit -->
+            <div class="row mb8">
+              <label class="purL labels" for="age">Purpose of visit</label>
+              <div class="purI afterL" id="local">
+                <input type="char" class="form-control" />
+              </div>
+            </div>
+            <!-- one person or department visit -->
+            <div class="row mb9">
+              <label class="departL labels" for="age"
+                >One person <br />or department <br />to be visited</label
+              >
+              <div class="departI afterL" id="local">
+                <input type="char" class="form-control" />
+              </div>
+            </div>
+            <!-- checkbox -->
+            <div class="row mb10">
+              <label class="checkbox-main labels" for="question_7"
+                >For health &amp; safety<br />purposes, do you <br />currently
+                have any<br />
+                of the below
+              </label>
+              <div class="col-sm-9">
+                <div class="checkbox-group">
+                  <div class="checkbox form-control">
+                    <label>
+                      <input
+                        type="checkbox"
+                        class="form-check"
+                        value="Fever"
+                      />&nbsp;&nbsp;Fever
+                    </label>
+                  </div>
+                  <div class="checkbox form-control form-check">
+                    <label>
+                      <input
+                        type="checkbox"
+                        class="form-check"
+                        value="Cough"
+                      />&nbsp;&nbsp;Cough
+                    </label>
+                  </div>
+                  <div class="checkbox form-control form-check">
+                    <label>
+                      <input
+                        type="checkbox"
+                        class="form-check"
+                        value="Running nose"
+                      />&nbsp;&nbsp;Running nose
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- for insta id -->
+            <div class="row mb11">
+              <label class="instaL labels" for="id">Instagram ID</label>
+              <div class="instaI afterL" id="local">
+                <input type="char" class="form-control" />
+              </div>
+            </div>
+            <!-- radio2 -->
+            <div class="row mb12">
+              <label class="radio2 labels" for="question_9">Profession </label>
+              <div class="checkboxes">
+                <div class="checkbox form-control">
+                  <label>
+                    <input
+                      type="radio"
+                      class="form-check"
+                      name="question_9"
+                      value="8"
+                    />
+                    Student
+                  </label>
+                </div>
+                <div class="checkbox form-control">
+                  <label>
+                    <input
+                      type="radio"
+                      class="form-check"
+                      name="question_9"
+                      value="9"
+                    />
+                    Employer
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- organization -->
+            <div class="row mb13">
+              <label class="orgL labels" for="organization"
+                >Name of organization</label
+              >
+              <div class="orgI afterL" id="local">
+                <input type="char" class="form-control" />
+              </div>
+            </div>
+            <!-- select -->
+            <div class="row mb14">
+              <label class="labels" for="question_11"
+                >Total number of visitors *</label
+              >
+              <div class="col-sm-9 afteL" id="local">
+                <select class="form-select" name="question_11" required>
+                  <option value="10">1</option>
+                  <option value="11">2</option>
+                  <option value="12">3</option>
+                  <option value="13">4</option>
+                  <option value="14">5</option>
+                  <option value="15">Above 5</option>
+                  <option value="16">Above 10</option>
+                </select>
+              </div>
+            </div>
+            <!-- 2nd last -->
+            <div class="row mb15">
+              <label class="labels" for="question_12"
+                >From where did you hear about London Bakery *</label
+              >
+              <div class="col-sm-9">
+                <div class="checkbox form-control form-check border-0 pb-0">
+                  <label>
+                    <input
+                      type="radio"
+                      class="form-check-input me-2"
+                      name="question_12"
+                      required
+                      value="17"
+                    />
+                    Friends of friends
+                  </label>
+                </div>
+                <div class="checkbox form-control form-check border-0 pb-0">
+                  <label>
+                    <input
+                      type="radio"
+                      class="form-check-input me-2"
+                      name="question_12"
+                      required
+                      value="18"
+                    />
+                    Social media
+                  </label>
+                </div>
+                <div class="checkbox form-control form-check border-0 pb-0">
+                  <label>
+                    <input
+                      type="radio"
+                      class="form-check-input me-2"
+                      name="question_12"
+                      required
+                      value="19"
+                    />
+                    Supermarkets
+                  </label>
+                </div>
+                <div class="checkbox form-control form-check border-0 pb-0">
+                  <label>
+                    <input
+                      type="radio"
+                      class="form-check-input me-2"
+                      name="question_12"
+                      required
+                      value="20"
+                    />
+                    Restaurant
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="hrr"></div>
+            <!-- button last part -->
+            <div class="mybtn">
+              <button type="submit" class="cappoint">
+                Confirm Appointment
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- rightpart -->
+        <!-- ========================to form the next part of whole -->
+        <div class="right">
+          <div class="things">
+            <div class="small-img">
+              <img src="/assets/images/corner.jpg" alt="picture" />
+            </div>
+            <h5 class="heading5">INDUSTRIAL VISIT</h5>
+          </div>
+          <small class="text-upper">MEETING DETAILS</small>
+          <div class="indarea">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>
+              Zone No: 81, New Industrial<br />
+              area
+            </p>
+          </div>
+          <div class="oneh">
+            <i class="fa-regular fa-clock"></i>
+            <p>1 hour</p>
+          </div>
+          <div class="hrr1"></div>
+          <small class="text-upper">OPERATOR</small>
+          <div class="person icon">
+            <i class="fa-solid fa-circle-user"></i>
+            <p>
+              <strong
+                >Mohammed Shefeel <br />
+                Maliyekkal</strong
+              >
+            </p>
+          </div>
+          <div class="com icon">
+            <i class="fa-solid fa-envelope"></i>
+            <p>hr@loafie.com</p>
+          </div>
+          <div class="toll-free icon1">
+            <i class="fa-solid fa-phone"></i>
+            <span>+974 4447 9785, Toll free: <br />800 6246</span>
+          </div>
+          <div class="hrr1"></div>
+          <small class="text-upper">Date &amp; time</small>
+          <br />
+          <div class="timedisplay"></div>
+        </div>
+
+        <!-- ===============================end -->
+      </div>
+    </div>
+    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <main>
+      <div class="structure">
+        <div class="success">
+          Your appointment has successfully been booked!
+        </div>
+        <div class="after">MMM - Industrial Visit Booking</div>
+
+        <div class="consumer">
+          <!-- 1 -->
+          <div class="consumer1">
+            <div class="first">
+              <p>Date &amp; Time</p>
+              <div class="timedisplay"></div>
+            </div>
+            <div class="second">
+              <p>Duration</p>
+              <div class="hourone">1hour</div>
+            </div>
+            <div class="third">
+              <p class="Location-B">Location</p>
+              <div class="zone-no">Zone No: 81, New Industrial area</div>
+            </div>
+            <div class="mails">
+              <p class="attendees">Attendees</p>
+              <div class="two-mail">
+                <div class="mail1">
+                  <div class="flop1">
+                    <p class="parag">Mohammed Shefeel Maliyekkal</p>
+                    <p class="s-mail">hr@loafie.com</p>
+                  </div>
+                  <div class="flop2">
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                </div>
+                <hr />
+                <div class="mail2">
+                  <div class="flop1">
+                    <p parag>C &amp; Dfs</p>
+                    <p class="s-mail user-mail"></p>
+                  </div>
+                  <div class="flop2">
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="easytask">
+              <p class="easy1">Details</p>
+              <div class="easy2">
+                <!-- <ul>
+                            
+                            
+                              <li class="list-part" id="phone"> Phone: 111</li>
+                              
+                              <li class="list-part" id="email">Email:</li>
+                            
+                              <li class="list-part" id="nationality"> Nationality: 333</li>
+                          
+                              <li class="list-part" id="age">Age:444</li>
+                              
+                              <li class="list-part" id="gender">Gender:555</li>
+                              
+                              <li class="list-part" id="qid">QID number:666</li>
+                              
+                              <li class="list-part" id="visit-p">Purpose of visit:777</li>
+                              
+                              <li class="list-part" id="no-visitors">Total number of visitors:888</li>
+                              
+                              <li class="list-part" id="hear">From where did you hear about London Bakery:111</li>
+                            </ul> -->
+              </div>
+            </div>
+            <div class="message">
+              <strong> <h5>Message from the Organizer</h5></strong>
+              <p>
+                Congratulations! We are delighted to confirm your registration
+                for the upcoming Industrial Visit to&nbsp;<span
+                  style="
+                    color: rgb(68, 75, 90);
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: 400;
+                    background-color: rgb(255, 255, 255);
+                  "
+                  >London Bakery</span
+                >.
+              </p>
+            </div>
+            <hr />
+            
+          </div>
+          
+
+          <!-- 2 -->
+          <div class="consumer2">
+            <div class="card-body">
+              <h5 class="card1">Mohammed Shefeel Maliyekkal</h5>
+              <div class="card2">
+                <div class="com icon">
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>hr@loafie.com</p>
+                </div>
+                <div class="hrr"></div>
+                <div class="card3">
+                  <div class="toll-free icon1">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+974 4447 9785, Toll free: <br />800 6246</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="l-buttons">
+          <div class="buttons-left">
+            <!-- 1 -->
+            <a
+              role="button"
+              class="left-one"
+              href="/calendar/ics/b4adf16a-e6ea-4b3d-a8c2-0adb2eb7227b.ics"
+            >
+              <img
+                src="/assets/images/oulook.jpg"
+                alt="Outlook"
+                loading="lazy"
+              />
+              Add to iCal/Outlook
+            </a>
+            <!-- 2 -->
+            <a
+              role="button"
+              class="left-two"
+              href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=Industrial+Visit+with+Mohammed+Shefeel+Maliyekkal&amp;dates=20250804T080000Z%2F20250804T090000Z&amp;details=Congratulations%21+We+are+delighted+to+confirm+your+registration+for+the+upcoming+Industrial+Visit+to%C2%A0+London+Bakery+.%0A%0AContact+Details%3A%0AMohammed+Shefeel+Maliyekkal%0AEmail%3A+hr%40loafie.com%0APhone%3A+%2B974+4447+9785%2C+Toll+free%3A+800+6246&amp;location=Zone+No%3A+81%2C++New+Industrial+area"
+            >
+              <img
+                src="/assets/images/google-cal.jpg"
+                alt="Google Agenda"
+                loading="lazy"
+              />
+              Add to Google Agenda
+            </a>
+          </div>
+          <div class="buttons-right">
+            <nav>
+              <a
+                class="right-one"
+                href="/calender.html"
+                >Schedule another appointment</a
+              >
+            </nav>
+            <a
+              role="button"
+              class="right-two"
+              href="/calender.html"
+            >
+              Cancel/Reschedule
+            </a>
+          </div>
+        </div>
+      </div>
+      
+    </main>
+    <!-- /////////////////////enddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd -->
+
+    <!-- end -->
+    <!-- footer -->
+    <section class="footer">
+      <div class="footer-parts">
+        <h4>ABOUT US</h4>
+        <div class="footer-container">
+          <!-- 1 -->
+          <div class="flex1">
+            <p>
+              Our commitment to high-quality products has allowed us to grow
+              into a truly world-class business. Our Brand, London bakery has a
+              place in the hearts and minds of ​Qatar’s multicultural community.
+              Perceived fondly by our customers, our bond with them is our
+              success and it is this unique relationship that has driven our
+              branding and it fuels our desire to continue to satisfy our
+              clientele by providing high-quality products in our ever-expanding
+              outlets.
+            </p>
+          </div>
+          <!-- 2 -->
+          <div class="flex2">
+            <p class="text-muted">
+              <b>London Bakery</b>
+              <br />Street No: 40, Zone No: 81<br />
+              Building No: 63<br />New Industrial area<br />Doha, 20730&nbsp;<br />Qatar
+            </p>
+          </div>
+          <!-- 3 -->
+          <div class="flex3">
+            <div class="col1">
+              <!-- ul -->
+              <ul class="list">
+                <li class="list1">
+                  <i class="fa fa-phone fa-fw me-2"></i>
+                  <span class="telephone">
+                    <a href="tel://+97444479785">+974 4447 9785</a>
+                  </span>
+                </li>
+                <li class="list2">
+                  <i class="fa fa-fw fa-volume-control-phone"></i>
+                  <span>Toll free: 800 6246</span>
+                  <br />
+                </li>
+                <li class="list3">
+                  <i class="fa fa-envelope fa-fw me-2"></i>
+
+                  <a href="mailto:info@londonbakery.qa​"
+                    >info@londonbakery.qa</a
+                  >
+                </li>
+              </ul>
+              <!-- ul end  -->
+              <div class="text-start">
+                <a
+                  href="https://www.facebook.com/londonbakery.qa/"
+                  style="text-decoration: none"
+                >
+                  <div class="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </div>
+                </a>
+
+                <a
+                  href="https://www.instagram.com/londonbakeryqatar/"
+                  style="text-decoration: none"
+                >
+                  <div class="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                </a>
+                <a
+                  href="https://wa.me/+97459988157?text=%20Contact%20Us%20%7C%20London%20Bakery%20https%3A%2F%2Fwww.londonbakery.qa%2Fcontactus%23scrollTop%3D0"
+                  style="text-decoration: none"
+                >
+                  <div class="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </div>
+                </a>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=info@londonbakery.qa"
+                  style="text-decoration: none"
+                >
+                  <div class="mail">
+                    <i class="fa fa-envelope shadow-sm rounded"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Copyright <span> &#169;</span> London Bakery</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
